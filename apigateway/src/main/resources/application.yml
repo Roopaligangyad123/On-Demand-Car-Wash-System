@@ -1,0 +1,50 @@
+#server:
+#  port: 7070
+#  
+#  spring:
+#    application:
+#      name: apigatway
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#      - id: admin-service
+#        uri:
+#          lb://admin-service
+#          
+#        predicates:
+#        - Path =/admin/** 
+#        
+#        
+#        
+#  
+#    
+#     
+#      - id: order-service
+#        uri:
+#          lb://order-service
+#          
+#        predicates:
+#        - Path =/order/** 
+#        
+#        
+#        
+#        
+#       
+#      
+#      - id: washer-service
+#        uri:
+#          lb://washer-service
+#          
+#        predicates:
+#        - Path =/washer/** 
+#        
+#        
+#        
+#        
+#      - id: user-service
+#        uri:
+#          lb://user-service
+#          
+#        predicates:
+#        - Path =/user/** 
